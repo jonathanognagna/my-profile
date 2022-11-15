@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.body3{
+    height: 80vh;
+    background-image: url(../images/1812.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body4{
+    height: 80vh;
+    background-image: url(../images/EMLV1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body5{
+    height: 80vh;
+    background-image: url(../images/fete.jpg);
+    background-position: 20% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topbar{
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+    height: 65px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo1{
+    width: 65px;
+    height: auto;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-center: 30px;
+}
+
+nav ul li{
+    background: rgb(255, 255, 255);
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+nav ul li a{
+    display: inline-block;
+    padding: 0 15px;
+    color: white;
+    margin-top: 12px;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background: rgb(0,150,187);
+}
+
+
+
+
+
+
+.banner{
+    margin: 150px 130px;
+    color: white;
+}
+
+.banner h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner h1 span{
+    color: rgb(0, 150, 187);
+}
+
+
+
+
+
+
+
+
+
+
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.marquee{
+    height: 60px;
+    margin-top: 10px;
+    background-color: rgb(0,150,187);
+}
+
+.marquee h1{
+    color: white;
+    margin-top: 10px;
+}
+
+.card{
+    height: 300px;
+    width: 330px;
+    padding: 20px 35px;
+    border-radius: 10px;
+    background: rgb(0, 150, 187);
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    ;
+}
+
+.card:before,
+.card:after{
+    content: '';
+    background: burlywood;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0,0,0);
+    transition: all 0.15s cubic-bezier(0.02,0.01,0.47,1);
+}
+
+.card:hover:before,
+.card:hover:after{
+    opacity: 0.15;
+}
+
+.card:hover:before{
+    transform: translate3d(50%,0,0) scale(0.9);
+}
+
+.card:hover:before{
+    transform: translate(50%,0) scale(1.1);
+}
+
+
+
+.card:hover{
+    color: rgb(0,157,187);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    animation: rotate 0.7s ease-in-out both;
+}
+
+
+
+.card .content p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+    line-height: 18px;
+    font-family: 'century gothic';
+    text-align: justify;
+}
+
+.card h1{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.image{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    margin: 23px;
+}
+
+
+
+
+.footer{
+    padding: 40px 0;
+    background-color: rgb(0,150,187);
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+
+
